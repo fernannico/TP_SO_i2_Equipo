@@ -7,6 +7,10 @@ e- realizar un listado, paso a paso ,de los comando necesarios para resolver est
 orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
 
 
+a) en git con el comando git remote add upstream hace un sync del repositorio original al repo forkeado y en git pull descargo de manera local el repositorio forkeado actualizado
+
+b) no 
+
 c)Solo por intermedio de BETA realizando un pull request para sincronizar los forks.
 (con el metodo que usamos)
 jkhkj
