@@ -1,0 +1,95 @@
+Ivan Becerra
+Danilo Vukosich
+Nicolas ivan Fernandez
+
+a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+d-¿Los datos que tenía en mi repositorio , editados por mi,
+ se pierden si quiero actualizar el fork?
+e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
+
+
+a) en git con el comando git remote add upstream y git merge upstream/<rama> hace un sync del repositorio original al repo forkeado y en git pull descargo de manera local el repositorio forkeado actualizado
+
+b) no 
+
+c)Solo por intermedio de BETA realizando un pull request para sincronizar los forks.
+(con el metodo que usamos)
+
+
+d)Siempre y cunado yo acepte los cambios.
+
+
+e) 1.BETA comandos/pasos
+	1. Crea el repositorio
+	2. clona el repositorio/descarga = git clone <link>
+	3. añade el archivo fork.txt 
+	4. Añade y comitea el archivo = git add . | git commit -m "commit uno"
+	5. Sube el archivo al repositorio remoto = git push
+	
+   2. GAMA comandos/pasos
+
+	1- forkea repositorio de beta
+	2- git clone al repositorio
+	3- modifica archivo fork.txt con nombre, apellido, ip y hora
+	4- git add . 
+	5- git commit -m "comentario"
+	6- git push
+
+   BETA
+	1. pull request de Gamma
+
+
+   3. ALFA comandos/pasos
+	1. Forkea el repositorio BETA
+	2. Agrego el comando git add upstream para sicronizar el fork 
+	2. Descargo el repositorio = git clone
+	3. Edito el archivo fork.txt agrego ip, hora y nombre apellido
+	4. git add . 
+	5. git commit -m "mi commit"
+	6. git push  = envio al repositorio remoto
+
+   BETA
+	1. Pull request de Alfa
+	2. Agrega el archivo NuevoDato.txt
+	3. Git add . | git commit 
+	4. git pull
+
+   GEMMA/ALFA
+	1. Se actualiza el repositorio con el fork sync
+
+4. 
+   BETA
+	1. Crea el archivo respuesta I2 112 .txt
+	2. añade el archivo al repositorio remoto
+	3. git add . | git commit -m "m" | git push
+
+   GAMMA 
+	1. Fork sync : git add remote upstream <linkRemoto> => git fetch => git merche upstream/<rama> => git pull
+	2. git pull
+	2. Modifica el archivo respuesta_I2_112.txt   
+ 	3. git add . | git commit -m "m" | git push
+
+   BETA 
+	1. hace pull request para actualizar
+	2. Modifica el archivo respuesta_I2_112.txt   
+ 	3. git add . | git commit -m "m" | git push
+  
+
+   ALFA: 
+	1. Fork sync : git add remote upstream <linkRemoto> => git fetch => git merche upstream/<rama> => git pull
+	2. Modifica el archivo respuesta_I2_112.txt   
+ 	3. git add . | git commit -m "m" | git push
+
+   BETA
+	1. Pull request 
+  
+   GAMMA
+	1. Fork Sync
+
+   ALFA:
+	1. FORK Sync
+   
+	
